@@ -1,0 +1,44 @@
+.breadcrumb {
+    background: #ddd;
+    display: inline-block;
+    padding: 1px;
+    padding-right: 15px;
+    -webkit-clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 0 100%, 15px 50%);
+    clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 0 100%, 15px 50%);
+}
+
+.breadcrumb li {
+    display: inline-block;
+    background: white;
+    padding: 0;
+    position: relative;
+    min-width:50px;
+    text-decoration: none;
+    -webkit-clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 0 100%, 15px 50%);
+    clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 0 100%, 15px 50%);
+    margin-right: -13px;
+}
+
+.breadcrumb li#last {
+    -webkit-clip-path: polygon(0 0, calc(100% - 0px) 0, 100% 50%, calc(100% - 0px) 100%, 0 100%, 15px 50%);
+    clip-path: polygon(0 0, calc(100% - 0px) 0, 100% 50%, calc(100% - 0px) 100%, 0 100%, 15px 50%);
+}
+
+.breadcrumb li:hover {
+    color: white;
+    background: #fff;
+}
+
+/* first link should not have anything cliped on the left side */
+.breadcrumb li:first-child {
+    -webkit-clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 0 100%);
+    clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 0 100%);
+}
+.breadcrumb.nav-tabs .nav-link {
+    color: #555;
+}
+
+.breadcrumb.nav-tabs .nav-link.active {
+    color: #337ab7;
+    border-bottom:3px solid cyan;
+}

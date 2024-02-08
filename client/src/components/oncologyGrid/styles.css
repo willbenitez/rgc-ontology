@@ -1,0 +1,7 @@
+.relative {
+    cursor: pointer;
+}
+.relative:hover {
+    font-weight: bold;
+    background-color: #5F9EA0;
+}
